@@ -25,9 +25,12 @@ Route::get('callback', function (Request $request) {
     /** @var \Laravel\Socialite\Two\User $user */
     $user = Socialite::driver('bluesky')->user();
 
-    $request->session()->put('bluesky_session', $user->session);
+    /** @var \Revolution\Bluesky\Session\OAuthSession $session */
+    $session = $user->session;
 
-    dump($user->session);
+    $request->session()->put('bluesky_session', $session);
+
+    dump($session);
 })->name('bluesky.oauth.redirect');
 
 //Route::middleware('auth')->group(function () {
