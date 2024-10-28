@@ -17,8 +17,8 @@ return new class extends Migration
 
             $table->string('did')->unique();
             $table->string('handle');
+            $table->string('avatar')->nullable();
             $table->string('issuer');
-            $table->string('avatar');
             $table->string('refresh_token');
 
             $table->rememberToken();
