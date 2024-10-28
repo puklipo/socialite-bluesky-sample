@@ -34,7 +34,7 @@ Route::get('callback', function (Request $request) {
     dump($session);
 
     $user = User::updateOrCreate([
-        'did' => $socialite_user->id,
+        'did' => $session->did(),
     ], [
         'name' => $session->displayName(),
         'handle' => $session->handle(),
