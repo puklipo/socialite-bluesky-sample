@@ -2,7 +2,6 @@
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use Revolution\Bluesky\Facades\Bluesky;
