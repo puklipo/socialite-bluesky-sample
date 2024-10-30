@@ -60,26 +60,31 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::post('/first', function (Request $request) {
-
-//    $session = OAuthSession::create([
-//        'issuer' => $request->user()->issuer,
-//        'refresh_token' => $request->user()->refresh_token,
-//    ]);
-
     $session = OAuthSession::create(session('bluesky_session'));
 
-    //dump($session);
-
     $post = Bluesky::withToken($session)
-        //->refreshSession()
         ->feed(limit: 1)
         ->json('feed.{first}');
-
-    //dump($post);
 
     return view('dashboard')->with('post', $post);
 })->middleware(['auth', 'verified'])->name('bsky.first');
 
+Route::post('/refresh', function (Request $request) {
+    //$session = OAuthSession::create(session('bluesky_session'));
+    $session = OAuthSession::create();
+
+    if ($session->tokenExpired()) {
+        $session = OAuthSession::create([
+            'issuer' => $request->user()->issuer,
+            'refresh_token' => $request->user()->refresh_token,
+        ]);
+    }
+
+    Bluesky::withToken($session)
+        ->refreshSession();
+
+    return to_route('dashboard');
+})->middleware(['auth', 'verified'])->name('bsky.refresh');
 
 //Route::middleware('auth')->group(function () {
 //    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
