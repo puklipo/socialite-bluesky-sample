@@ -74,6 +74,7 @@ Route::post('/refresh', function (Request $request) {
 
     if ($session->tokenExpired()) {
         $session = OAuthSession::create([
+            'did' => $request->user()->did,
             'issuer' => $request->user()->issuer,
             'refresh_token' => $request->user()->refresh_token,
         ]);
