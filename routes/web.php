@@ -79,6 +79,8 @@ Route::post('/refresh', function (Request $request) {
         ]);
     }
 
+    info('refresh', $session->toArray());
+
     Bluesky::withToken($session)
         ->refreshSession();
 
