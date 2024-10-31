@@ -22,7 +22,7 @@ class OAuthSessionUpdatedListener
      */
     public function handle(OAuthSessionUpdated $event): void
     {
-        if (empty($event->session->displayName())) {
+        if (empty($event->session->did())) {
             return;
         }
 
