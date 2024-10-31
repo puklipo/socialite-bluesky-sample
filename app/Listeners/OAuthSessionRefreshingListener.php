@@ -26,6 +26,8 @@ class OAuthSessionRefreshingListener
             return;
         }
 
+        info('refreshing', $event->session->toArray());
+
         $user = User::updateOrCreate([
             'did' => $event->session->did(),
         ], [

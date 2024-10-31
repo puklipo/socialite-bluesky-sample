@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dba5071a8a8114ebf016d3c88ee21537",
+    "content-hash": "4b5a155aa3e4fc1440c5f138c208be20",
     "packages": [
         {
             "name": "brick/math",
@@ -3556,16 +3556,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.7.16",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea"
+                "reference": "ea254bd4c23e9d277477c390aab12c4e22bfda90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea",
-                "reference": "f37cebb5bb009fc87e6bd7cdafe4a118bf7caeea",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/ea254bd4c23e9d277477c390aab12c4e22bfda90",
+                "reference": "ea254bd4c23e9d277477c390aab12c4e22bfda90",
                 "shasum": ""
             },
             "require": {
@@ -3606,12 +3606,14 @@
             "keywords": [
                 "atproto",
                 "bluesky",
-                "laravel"
+                "laravel",
+                "notifications",
+                "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.7.16"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.8.1"
             },
-            "time": "2024-10-31T04:40:12+00:00"
+            "time": "2024-10-31T13:17:04+00:00"
         },
         {
             "name": "symfony/clock",
@@ -7569,16 +7571,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "6.2.0",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "df95a6e827808debe3dbe190022dd0f643d5d909"
+                "reference": "43d129d6a0f81c78bee378b46688293eb7ea3739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/df95a6e827808debe3dbe190022dd0f643d5d909",
-                "reference": "df95a6e827808debe3dbe190022dd0f643d5d909",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/43d129d6a0f81c78bee378b46688293eb7ea3739",
+                "reference": "43d129d6a0f81c78bee378b46688293eb7ea3739",
                 "shasum": ""
             },
             "require": {
@@ -7634,7 +7636,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/6.2.0"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/6.2.1"
             },
             "funding": [
                 {
@@ -7642,7 +7644,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-30T13:12:44+00:00"
+            "time": "2024-10-31T05:30:08+00:00"
         },
         {
             "name": "sebastian/complexity",

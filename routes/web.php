@@ -81,12 +81,9 @@ Route::post('/refresh', function (Request $request) {
     }
 
     info('refresh', $session->toArray());
-    try {
-        Bluesky::withToken($session)
-            ->refreshSession();
-    } catch (\Exception $exception) {
-        dd($exception);
-    }
+
+    Bluesky::withToken($session)
+        ->refreshSession();
 
     return to_route('dashboard');
 })->middleware(['auth', 'verified'])->name('bsky.refresh');
