@@ -72,12 +72,12 @@ Route::post('/refresh', function (Request $request) {
     //$session = OAuthSession::create(session('bluesky_session'));
     $session = OAuthSession::create();
 
-    if ($session->tokenExpired()) {
-        $session = OAuthSession::create([
-            'issuer' => $request->user()->issuer,
-            'refresh_token' => $request->user()->refresh_token,
-        ]);
-    }
+//    if ($session->tokenExpired()) {
+//        $session = OAuthSession::create([
+//            'issuer' => $request->user()->issuer,
+//            'refresh_token' => $request->user()->refresh_token,
+//        ]);
+//    }
 
     Bluesky::withToken($session)
         ->refreshSession();
