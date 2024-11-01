@@ -26,12 +26,12 @@ class OAuthSessionRefreshingListener
             return;
         }
 
-        info('refreshing', $event->session->toArray());
-
-        $user = User::updateOrCreate([
-            'did' => $event->session->did(),
-        ], [
-            'refresh_token' => $event->session->refresh(),
-        ]);
+//        info('refreshing', $event->session->toArray());
+//
+//        $user = User::updateOrCreate([
+//            'did' => $event->session->did(),
+//        ], [
+//            'refresh_token' => $event->session->refresh(),
+//        ]);
     }
 }
