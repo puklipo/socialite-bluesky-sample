@@ -7,7 +7,10 @@ use Laravel\Socialite\Facades\Socialite;
 use Revolution\Bluesky\Facades\Bluesky;
 use Revolution\Bluesky\Session\OAuthSession;
 
-Route::get('/', function () {
+Route::get('/', function (Request $request) {
+    if(app()->isLocal() & $request->has('iss')){
+        return to_route('bluesky.oauth.redirect', $request->query());
+    }
     return view('welcome');
 });
 
