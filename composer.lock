@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b5a155aa3e4fc1440c5f138c208be20",
+    "content-hash": "673a9ee5f999fa6ad2a541ef1cd9a701",
     "packages": [
         {
             "name": "brick/math",
@@ -2139,20 +2139,20 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bbd3eef89af8ba66a3aa7952b5439168fbcc529f"
+                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bbd3eef89af8ba66a3aa7952b5439168fbcc529f",
-                "reference": "bbd3eef89af8ba66a3aa7952b5439168fbcc529f",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/10ac0aa86b8062219ce21e8189123d611ca3ecd9",
+                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9",
                 "shasum": ""
             },
             "require": {
-                "carbonphp/carbon-doctrine-types": "*",
+                "carbonphp/carbon-doctrine-types": "<100.0",
                 "ext-json": "*",
                 "php": "^8.1",
                 "psr/clock": "^1.0",
@@ -2241,7 +2241,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-19T06:22:39+00:00"
+            "time": "2024-11-03T16:02:24+00:00"
         },
         {
             "name": "nette/schema",
@@ -3556,16 +3556,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.8.3",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "45a1600fbd9da4ce1fa32a3c68b4a7c78c550a0f"
+                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/45a1600fbd9da4ce1fa32a3c68b4a7c78c550a0f",
-                "reference": "45a1600fbd9da4ce1fa32a3c68b4a7c78c550a0f",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/9987cdf7f56626592bae7a9269765c19c33feee0",
+                "reference": "9987cdf7f56626592bae7a9269765c19c33feee0",
                 "shasum": ""
             },
             "require": {
@@ -3611,9 +3611,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.8.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.9.3"
             },
-            "time": "2024-11-01T11:45:52+00:00"
+            "time": "2024-11-04T07:55:02+00:00"
         },
         {
             "name": "symfony/clock",
