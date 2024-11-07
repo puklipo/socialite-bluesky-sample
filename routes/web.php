@@ -66,7 +66,8 @@ Route::post('/first', function (Request $request) {
 
     $post = Bluesky::withToken($session)
         ->getAuthorFeed(limit: 1)
-        ->json('feed.{first}');
+        ->collect()->dd();
+        //->json('feed.{first}');
 
     return view('dashboard')->with('post', $post);
 })->middleware(['auth', 'verified'])->name('bsky.first');
