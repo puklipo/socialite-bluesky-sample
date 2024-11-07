@@ -67,7 +67,7 @@ Route::post('/first', function (Request $request) {
     $post = Bluesky::withToken($session)
         ->getAuthorFeed(limit: 1);
 
-    dd($post);
+    dd($post->collect());
 
     $post = $post->json('feed.{first}');
 
