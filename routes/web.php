@@ -8,7 +8,7 @@ use Revolution\Bluesky\Facades\Bluesky;
 use Revolution\Bluesky\Session\OAuthSession;
 
 Route::get('/', function (Request $request) {
-    if(app()->isLocal() & $request->has('iss')){
+    if (app()->isLocal() & $request->has('iss')) {
         return to_route('bluesky.oauth.redirect', $request->query());
     }
     return view('welcome');
@@ -65,9 +65,11 @@ Route::post('/first', function (Request $request) {
     $session = OAuthSession::create(session('bluesky_session'));
 
     $post = Bluesky::withToken($session)
-        ->getAuthorFeed(limit: 1)
-        ->collect()->dd();
-        //->json('feed.{first}');
+        ->getAuthorFeed(limit: 1);
+
+    dd($post);
+
+    $post = $post->json('feed.{first}');
 
     return view('dashboard')->with('post', $post);
 })->middleware(['auth', 'verified'])->name('bsky.first');
