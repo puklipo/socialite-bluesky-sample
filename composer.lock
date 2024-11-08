@@ -2139,16 +2139,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9"
+                "reference": "e1268cdbc486d97ce23fef2c666dc3c6b6de9947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/10ac0aa86b8062219ce21e8189123d611ca3ecd9",
-                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e1268cdbc486d97ce23fef2c666dc3c6b6de9947",
+                "reference": "e1268cdbc486d97ce23fef2c666dc3c6b6de9947",
                 "shasum": ""
             },
             "require": {
@@ -2241,7 +2241,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-03T16:02:24+00:00"
+            "time": "2024-11-07T17:46:48+00:00"
         },
         {
             "name": "nette/schema",
@@ -3556,20 +3556,23 @@
         },
         {
             "name": "revolution/atproto-lexicon-contracts",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/atproto-lexicon-contracts.git",
-                "reference": "99063304690f358d6930162e744f4d44f4406162"
+                "reference": "6d93aa6d7c25c16d2a6d699b0ce64a1a34201183"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/99063304690f358d6930162e744f4d44f4406162",
-                "reference": "99063304690f358d6930162e744f4d44f4406162",
+                "url": "https://api.github.com/repos/kawax/atproto-lexicon-contracts/zipball/6d93aa6d7c25c16d2a6d699b0ce64a1a34201183",
+                "reference": "6d93aa6d7c25c16d2a6d699b0ce64a1a34201183",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.2"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.9"
             },
             "type": "library",
             "autoload": {
@@ -3596,22 +3599,22 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/atproto-lexicon-contracts/issues",
-                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.5"
+                "source": "https://github.com/kawax/atproto-lexicon-contracts/tree/1.0.7"
             },
-            "time": "2024-11-07T12:28:21+00:00"
+            "time": "2024-11-08T02:25:19+00:00"
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.10.3",
+            "version": "0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "656329f1548257f374e900e1e57e6c4b5b720aeb"
+                "reference": "c3d4b8e36ebe6597dad405748ab23f148b1a577c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/656329f1548257f374e900e1e57e6c4b5b720aeb",
-                "reference": "656329f1548257f374e900e1e57e6c4b5b720aeb",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/c3d4b8e36ebe6597dad405748ab23f148b1a577c",
+                "reference": "c3d4b8e36ebe6597dad405748ab23f148b1a577c",
                 "shasum": ""
             },
             "require": {
@@ -3621,7 +3624,7 @@
                 "laravel/socialite": "^5.16",
                 "php": "^8.2",
                 "phpseclib/phpseclib": "^3.0",
-                "revolution/atproto-lexicon-contracts": "^1.0.5"
+                "revolution/atproto-lexicon-contracts": "1.0.7"
             },
             "require-dev": {
                 "orchestra/testbench": "^9.0"
@@ -3658,9 +3661,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.10.3"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.10.6"
             },
-            "time": "2024-11-07T12:33:19+00:00"
+            "time": "2024-11-08T02:37:12+00:00"
         },
         {
             "name": "symfony/clock",
