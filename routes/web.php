@@ -64,7 +64,7 @@ Route::get('/dashboard', function () {
 Route::post('/first', function (Request $request) {
     $session = OAuthSession::create(session('bluesky_session'));
 
-    $post = Bluesky::getAuthorFeed(actor: $session->did());
+    $post = Bluesky::withToken($session)->getAuthorFeed();
 
     $post = $post->json('feed.{first}');
 
