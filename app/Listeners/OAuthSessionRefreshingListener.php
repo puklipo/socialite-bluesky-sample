@@ -28,10 +28,10 @@ class OAuthSessionRefreshingListener
 
         info('refreshing', $event->session->toArray());
 
-        $user = User::updateOrCreate([
-            'did' => $event->session->did(),
-        ], [
-            'refresh_token' => $event->session->refresh(),
-        ]);
+        $user = User::firstWhere('did', $event->session->did());
+
+        $user->fill([
+            'refresh_token' => '',
+        ])->save();
     }
 }
