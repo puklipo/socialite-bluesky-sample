@@ -43,6 +43,6 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "database",
         "VIEW_COMPILED_PATH": "/tmp",
-        "VERCEL_FORCE_NO_BUILD_CACHE": 1
+        "VERCEL_FORCE_NO_BUILD_CACHE": "1"
     }
 }
