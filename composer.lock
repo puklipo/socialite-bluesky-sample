@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cde9ce03bfa0960b77afe570fc64a717",
+    "content-hash": "ae4eb2f30d658644ddddcbd32a8f1553",
     "packages": [
         {
             "name": "brick/math",
@@ -512,16 +512,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.10.1",
+            "version": "v6.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "500501c2ce893c824c801da135d02661199f60c5"
+                "reference": "30c19ed0f3264cb660ea496895cfb6ef7ee3653b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/500501c2ce893c824c801da135d02661199f60c5",
-                "reference": "500501c2ce893c824c801da135d02661199f60c5",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/30c19ed0f3264cb660ea496895cfb6ef7ee3653b",
+                "reference": "30c19ed0f3264cb660ea496895cfb6ef7ee3653b",
                 "shasum": ""
             },
             "require": {
@@ -569,9 +569,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.10.1"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.10.2"
             },
-            "time": "2024-05-18T18:05:11+00:00"
+            "time": "2024-11-24T11:22:49+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -3606,16 +3606,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.13.8",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "161cf6aadbadd5cf127a6aaac03c1dcd11f7f10c"
+                "reference": "7d443612284cf838c7fb0332774b24b068ff5bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/161cf6aadbadd5cf127a6aaac03c1dcd11f7f10c",
-                "reference": "161cf6aadbadd5cf127a6aaac03c1dcd11f7f10c",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/7d443612284cf838c7fb0332774b24b068ff5bfb",
+                "reference": "7d443612284cf838c7fb0332774b24b068ff5bfb",
                 "shasum": ""
             },
             "require": {
@@ -3664,9 +3664,9 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.13.8"
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.14.0"
             },
-            "time": "2024-11-23T09:22:06+00:00"
+            "time": "2024-11-24T07:35:13+00:00"
         },
         {
             "name": "symfony/clock",
@@ -8481,12 +8481,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
