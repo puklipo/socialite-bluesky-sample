@@ -3606,16 +3606,16 @@
         },
         {
             "name": "revolution/laravel-bluesky",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-bluesky.git",
-                "reference": "7d443612284cf838c7fb0332774b24b068ff5bfb"
+                "reference": "7ba37f546e92b1dc23a4cb4d763ed98431efd405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/7d443612284cf838c7fb0332774b24b068ff5bfb",
-                "reference": "7d443612284cf838c7fb0332774b24b068ff5bfb",
+                "url": "https://api.github.com/repos/kawax/laravel-bluesky/zipball/7ba37f546e92b1dc23a4cb4d763ed98431efd405",
+                "reference": "7ba37f546e92b1dc23a4cb4d763ed98431efd405",
                 "shasum": ""
             },
             "require": {
@@ -3664,9 +3664,10 @@
                 "socialite"
             ],
             "support": {
-                "source": "https://github.com/kawax/laravel-bluesky/tree/0.14.0"
+                "issues": "https://github.com/kawax/laravel-bluesky/issues",
+                "source": "https://github.com/kawax/laravel-bluesky/tree/0.14.1"
             },
-            "time": "2024-11-24T07:35:13+00:00"
+            "time": "2024-11-25T02:16:03+00:00"
         },
         {
             "name": "symfony/clock",
